@@ -1,36 +1,12 @@
 import React from 'react'
-import grafico from '../../assets/grafico.png'
+import Menu from '../../components/menu';
 
 function Adm() {
   return (
-    <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info p=0" >
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-   
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Atena</a>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/Adm">Administração<span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="/MinhaConta" ><span class="sr-only"></span>Minha Conta</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <br></br><br></br><br></br><br></br><br></br><br></br>
-  <p class="font-weight text-center">Administrações</p>
 <div>
+   <Menu /> 
+   <div class="descricao">Administrações</div>
+   <br></br> <br></br> <br></br> <br></br>
 <table class="table">
     <tr>
       <th scope="col" >Job</th>
@@ -86,12 +62,12 @@ function Adm() {
     <tr>
       <th scope="row">7</th>
       <td>Valor total:</td>
-      <td img src={grafico} class="img-fluid" alt="Imagem responsiva"></td>
-      <td>Valor total:</td>
     </tr>
   </tbody>
 </table>
-  </div>
+      <div className="text-center">< img src='https://manual.futurasistemas.com.br/wp-content/uploads/2016/11/22.jpg'/></div>
+      <div className="text-center">< img src='https://manual.futurasistemas.com.br/wp-content/uploads/2016/11/20.jpg'/></div>
+       
 </div>
 
 
